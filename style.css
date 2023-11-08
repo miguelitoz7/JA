@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Merriweather:wght@300&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +10,13 @@ body {
     height: 100vh;
 }
 
-a {
+nav a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
 }
 
-a:hover {
+nav a:hover {
     opacity: 0.7;
 }
 
@@ -28,7 +30,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     background: #23232e;
     height: 8vh;
 }
@@ -44,11 +46,14 @@ nav {
 }
 
 main {
-    height: 92vh
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-grid {
-    background-color: rgb(0, 0, 0);
+    background-color: white;
     display: grid;
     grid-template-columns: repeat(6, 100px);
     grid-template-rows: repeat(4, 100px);
@@ -56,42 +61,90 @@ main {
     grid-gap: 9px;
 }
 
+button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  background: #23232e;
+  color: #fff;
+}
 
-div#janeiro {
-    background: red;
+
+button:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+
+
+.mes {
+    
+}
+
+a#janeiro {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-div#fevereiro {
-    background: pink;
+a#fevereiro {
     grid-column: 3;
 }
 
-div#março {
-    background: green;
+a#março {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;
 }
 
-div#abril {
-    background: silver;
+a#abril {
     grid-row-start: 2;
     grid-row-end: 4;
 }
 
-div#maio {
-    background: #e85d04;
+a#maio {
     grid-column: 1;
     grid-row: 4;
 }
 
-div#junho {
-    background: yellow;
+a#junho {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row: 4;
+}
+
+a#julho {
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+a#agosto {
+  grid-row-start: 2;
+  grid-row-end: 4;  
+}
+
+a#setembro {
+  grid-column: 4;
+  grid-row: 4;  
+}
+
+a#outubro {
+  grid-column-start: 5;
+  grid-column-end: 7;  
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+a#novembro {
+  grid-column: 6;
+  grid-row: 1;
+}
+
+a#dezembro {
+  grid-column-start: 5;
+  grid-column-end: 7;
 }
 
