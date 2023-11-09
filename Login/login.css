@@ -46,8 +46,58 @@ nav {
 }
 
 main {
+    background-color: silver;
     height: 92vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box {
+    background: white;
+    font-family: 'Lato', sans-serif;
+    color: #23232e;
+    position: absolute;
+    padding: 15px;
+    border-radius: 10px;
+    width: 35%;
+    height: 40%;
+    border: 1px solid black;
+}
+
+
+legend {
+    border: 1px solid #ffffff;
+    padding: 5px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #23232e;
+    font-size: 30px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-user {
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 90%;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+#submit {
+    border: 1px solid #23232e;
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+    background-color: #23232e;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 15px;
 }
